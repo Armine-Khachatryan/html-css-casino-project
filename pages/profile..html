@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/></head>
+<body>
+<div>
+    <div class="container">
+        <div class="headerWhole">
+            <a href="page1.html">
+                <img class="logoStyle" src="../assets/images/Logo.png"/>
+            </a>
+            <marquee width="45%" direction="right"  class="marqueeStyle">
+                <div class="marqueeRow">
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                </div>
+            </marquee>
+            <div class="buttons">
+                <button
+                        class="modal-button">
+                    MY PROFILE </button>
+                <button
+                        id="secondaryBtn"
+                        class="modal-button">
+                    LOG OUT</button>
+            </div>
+            <div class="flags">
+                <div class="flagDiv"><img class="flagStyle" src="../assets/images/icons/GermanFlag.svg"/>GE</div>
+                <div class="flagDiv"><img class="flagStyle" src="../assets/images/icons/UsFlag.svg"/>US</div>
+            </div>
+        </div>
+    </div>
+    <div class="headerBelow">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">All</div>
+                    <div class="swiper-slide">Slots</div>
+                    <div class="swiper-slide">Hot</div>
+                    <div class="swiper-slide">New</div>
+                    <div class="swiper-slide">3D slots</div>
+                    <div class="swiper-slide">Megaways slots</div>
+                    <div class="swiper-slide">Bonus multipliers</div>
+                    <div class="swiper-slide">Wild play machines</div>
+                    <div class="swiper-slide">Konami Slots</div>
+                    <div class="swiper-slide">Reel slots</div>
+                    <div class="swiper-slide">Multiple payline machines</div>
+                    <div class="swiper-slide">Licensed slot games</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wholeProfile">
+            <div class="profileLeft">
+                <div class="profileLeftRow active">Profile</div>
+                <div class="profileLeftRow">History</div>
+                <div class="profileLeftRow">Deposit</div>
+                <div class="profileLeftRow">Withdraw</div>
+            </div>
+            <div class="profileRight">
+                <div class="profileRightTitle">Welcome, {username}</div>
+                <div class="profileRightSubTitle">Current balance</div>
+                <div class="profileRow">
+                    <div style="width: 100%">
+                        <div class="profileRowLeftTitle">Your balance</div>
+                        <div class="profileRowLeftValue">535565 USD</div>
+                    </div>
+                    <div>
+                        <div class="profileRowLeftTitle">Your bonus</div>
+                        <div class="profileRowLeftValue">535565 USD</div>
+                    </div>
+                </div>
+                <div class="profileRow">
+                    <div style="width: 100%">
+                        <div class="profileRowLeftTitle">Your wager</div>
+                        <div class="profileRowLeftValue">535565 USD</div>
+                    </div>
+                    <div>
+                        <div class="profileRowLeftTitle">Your refunds</div>
+                        <div class="profileRowLeftValue">535565 USD</div>
+                    </div>
+                </div>
+                <div class="profileRightSubTitle">Personal info</div>
+                <div class="profileRowBelow">
+                    <div class="control">
+                        <label class="controlLabel" for="username">Username</label>
+                        <input class="controlInput"  id="username"  type="text" name="username" value="name_surname"/>
+                    </div>
+                    <div class="control">
+                        <label class="controlLabel" for="email">Email</label>
+                        <input class="controlInputEmail"  id="email"  type="email" name="email" value="example@gmail.com"/>
+                    </div>
+                </div>
+                <div class="profileRowBelow">
+                    <div class="profileButtons">
+                        <button class="discard">DISCARD</button>
+                        <button class="save">Save</button>
+                    </div>
+                </div>
+                <div class="profileRightSubTitle">Password</div>
+                <div class="profileRowBelow">
+                    <div class="control">
+                        <label class="controlLabel" for="old_password">Old password</label>
+                        <input class="controlInput"  id="old_password"  type="password" name="old_password"/>
+                    </div>
+                    <div class="control">
+                        <label class="controlLabel" for="new_password">New password</label>
+                        <input class="controlInput"  id="new_password"  type="password" name="new_password"/>
+                    </div>
+                </div>
+                <div class="repeatInputDiv">
+                    <div class="control">
+                        <label class="controlLabel" for="repeat_password">Repeat new password</label>
+                        <input class="controlInput"  id="repeat_password"  type="password" name="repeat_password"/>
+                    </div>
+                </div>
+                <div class="profileRowBelow">
+                    <div class="profileButtons">
+                        <button class="discard">DISCARD</button>
+                        <button class="save">Save</button>
+                    </div>
+                </div>
+            </div>
+            <div class="profileRight hidden">
+                <div class="profileRightTitle">History</div>
+                <div class="radioBtns">
+                    <div class="radioBtn">
+                        <input class="radioInput" type="radio" id="games" name="types" value="games" checked>
+                        <label class="radioLabel" for="games">Games</label>
+                    </div>
+                    <div class="radioBtn">
+                        <input class="radioInput" type="radio" id="deposit" name="types" value="deposit">
+                        <label  class="radioLabel"  for="deposit">Deposit</label>
+                    </div>
+                    <div class="radioBtn">
+                        <input class="radioInput" type="radio" id="withdraws" name="types" value="withdraws">
+                        <label  class="radioLabel" for="withdraws">Withdraws</label>
+                    </div>
+                </div>
+                <table class="historyTable">
+                    <tr class="theadStyle">
+                        <th>#</th>
+                        <th>Date</th>
+                        <th>Game</th>
+                        <th>Bet</th>
+                        <th>Win</th>
+                    </tr>
+                    <tr class="tbodyStyle">
+                        <td>1</td>
+                        <td>2023-10-23 05:55</td>
+                        <td>Lorem ipsum dolor sit</td>
+                        <td>2.0000</td>
+                        <td>1.0000</td>
+                    </tr>
+                    <tr class="tbodyStyle">
+                        <td>2</td>
+                        <td>2023-10-23 05:55</td>
+                        <td>Lorem ipsum dolor sit</td>
+                        <td>2.0000</td>
+                        <td>1.0000</td>
+                    </tr>
+                    <tr class="tbodyStyle">
+                        <td>3</td>
+                        <td>2023-10-23 05:55</td>
+                        <td>Lorem ipsum dolor sit</td>
+                        <td>2.0000</td>
+                        <td>1.0000</td>
+                    </tr>
+                    <tr class="tbodyStyle">
+                        <td>4</td>
+                        <td>2023-10-23 05:55</td>
+                        <td>Lorem ipsum dolor sit</td>
+                        <td>2.0000</td>
+                        <td>1.0000</td>
+                    </tr>
+                    <tr class="tbodyStyle">
+                        <td>5</td>
+                        <td>2023-10-23 05:55</td>
+                        <td>Lorem ipsum dolor sit</td>
+                        <td>2.0000</td>
+                        <td>1.0000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="profileRight hidden">
+                <div class="profileRightTitle">Deposit</div>
+                <div class="depositTitle">Current balance</div>
+                <div class="depositSum">123456 USD</div>
+                <div class="radioBtns">
+                    <div class="radioBtn">
+                        <input class="radioInput" type="radio" id="coinbase" name="payment" value="coinbase" checked>
+                        <label class="radioLabel" for="coinbase">Coinbase</label>
+                    </div>
+                    <div class="radioBtn">
+                        <input class="radioInput" type="radio" id="btc_pay" name="payment" value="btc_pay">
+                        <label  class="radioLabel"  for="btc_pay">BTC PAY</label>
+                    </div>
+                    <div class="radioBtn">
+                        <input class="radioInput" type="radio" id="pin_code" name="payment" value="pin_code">
+                        <label  class="radioLabel" for="pin_code">Pin Code</label>
+                    </div>
+                </div>
+                <div class="controlAmount">
+                    <label class="controlLabel" for="amount">Enter amount</label>
+                    <input class="controlInput"  id="amount"  type="number" name="amount" value="amount"/>
+                </div>
+                <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 360px">
+                    <button class="pay_balance">Pay balance</button>
+                </div>
+            </div>
+            <div class="profileRight hidden">
+                <div class="profileRightTitle">Withdraw</div>
+                <div class="depositTitle">Current balance</div>
+                <div class="depositSum">123456 USD</div>
+                <div class="note">******Please NOTE there is a minimum 100 EUR withdraw amount your balalance must be
+                    MIN 100 USD or EURO!</div>
+                <div class="profileRowBelow">
+                    <div class="control" style="max-width:360px; width:100%">
+                        <label class="controlLabel" for="amount_withdraw">Enter amount</label>
+                        <input class="controlInput"  id="amount_withdraw"  type="number" name="amount_withdraw"/>
+                    </div>
+                    <div style="max-width:229px; width:100%" class="control">
+                        <label class="controlLabel" for="currency">Currency</label>
+                        <select  class="controlInput" id="currency" name="currency">
+                            <option value="Eur">Eur</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control" style="max-width:621px; width:100%">
+                    <label class="controlLabel" for="wallet_address">Enter your wallet address</label>
+                    <input class="controlInput"  id="wallet_address"  type="text" name="wallet_address"/>
+                </div>
+                <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 621px">
+                    <button class="pay_balance">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const profileLeftRows = document.querySelectorAll(".profileLeftRow");
+        const profileRights = document.querySelectorAll(".profileRight");
+        profileLeftRows.forEach(function (row, index) {
+            row.addEventListener("click", function () {
+                // Hide all profileRight divs
+                profileRights.forEach(function (el) {
+                    el.classList.add("hidden");
+                });
+                profileLeftRows.forEach(function (element) {
+                    element.classList.remove("active");
+                });
+                this.classList.add("active");
+                if (index < profileRights.length) {
+                    profileRights[index].classList.remove("hidden");
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

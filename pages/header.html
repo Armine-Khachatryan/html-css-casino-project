@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="headerWhole">
+            <a href="page1.html">
+                <img class="logoStyle" src="../assets/images/Logo.png"/>
+            </a>
+            <marquee width="45%" direction="right"  class="marqueeStyle">
+                <div class="marqueeRow">
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                    <div class="marqueeDiv">JACKPOT € 13.25 </div>
+                </div>
+            </marquee>
+            <div class="buttons">
+                <button
+                        class="modal-button"
+                        href="#registerModal">
+                    REGISTER</button>
+                <button
+                        id="secondaryBtn"
+                        class="modal-button"
+                        href="#loginModal">
+                    LOGIN</button>
+            </div>
+            <div class="flags">
+                <div class="flagDiv"><img class="flagStyle" src="../assets/images/icons/GermanFlag.svg"/>GE</div>
+                <div class="flagDiv"><img class="flagStyle" src="../assets/images/icons/UsFlag.svg"/>US</div>
+            </div>
+        </div>
+    </div>
+    <div class="headerBelow">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">All</div>
+                    <div class="swiper-slide">Slots</div>
+                    <div class="swiper-slide">Hot</div>
+                    <div class="swiper-slide">New</div>
+                    <div class="swiper-slide">3D slots</div>
+                    <div class="swiper-slide">Megaways slots</div>
+                    <div class="swiper-slide">Bonus multipliers</div>
+                    <div class="swiper-slide">Wild play machines</div>
+                    <div class="swiper-slide">Konami Slots</div>
+                    <div class="swiper-slide">Reel slots</div>
+                    <div class="swiper-slide">Multiple payline machines</div>
+                    <div class="swiper-slide">Licensed slot games</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 8,
+        spaceBetween: 30,
+        loop: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</body>
+</html>
